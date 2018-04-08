@@ -8,5 +8,6 @@
     template: '<div class="wingBlank"><slot></slot></div>'
   });
 
+  export default {}
 
 </script>
