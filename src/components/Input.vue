@@ -61,13 +61,9 @@
     data() {
       return {}
     },
-    model: {
-      prop: 'value',
-      event: 'setValue'
-    },
     methods: {
       handleInput(e) {
-        this.$emit('setValue', e.target.value);
+        this.$emit('input', e.target.value);
       },
       handleKeyDown(e) {
         if (e.keyCode === 13) {
@@ -80,7 +76,6 @@
         this.$emit('change', val);
       }
     }
-
   }
 </script>
 
